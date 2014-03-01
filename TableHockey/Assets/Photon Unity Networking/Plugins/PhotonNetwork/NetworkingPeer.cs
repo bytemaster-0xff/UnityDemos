@@ -103,7 +103,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
 
     public string mGameserver { get; internal set; }
 
-    public bool requestSecurity = false;
+    public bool requestSecurity = true;
 
     private Dictionary<Type, List<MethodInfo>> monoRPCMethodsCache = new Dictionary<Type, List<MethodInfo>>();
 
